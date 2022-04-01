@@ -1,3 +1,6 @@
+var first =prompt("Enter Player one name :");
+var second = prompt("Enter Player two name :");
+
 document.querySelector(".p2").addEventListener("click", play2);
 var player1;
 var player2;
@@ -69,17 +72,17 @@ function answer() {
 
 
         if (player1 > player2) {
-            document.querySelector(".result").innerHTML = "🚩Player 1 Wins !!";
+            document.querySelector(".result").innerHTML = "🚩" + first + " Wins !!";
         }
         if (player2 > player1) {
-            document.querySelector(".result").innerHTML = "Player 2 Wins !!🚩";
+            document.querySelector(".result").innerHTML = second + " Wins !!🚩";
         }
         if (player1 == player2) {
             document.querySelector(".result").innerHTML = "Oops ! It's a tie";
         }
     }
     else {
-        document.querySelector(".result").innerHTML = "Player 2 Chance";
+        document.querySelector(".result").innerHTML = second +"'s Chance";
     }
 
 
